@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/title_b"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/b_title_border"
+            android:gravity="center"
+            android:text="详细商品"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btn_return_ji_lu"
+            android:layout_width="45dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_height="45dp"
+            android:background="@mipmap/return_a"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_ji_lu_name"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="名称"
+            />
+        <TextView
+            android:id="@+id/tv_ji_lu_num"
+            android:layout_marginLeft="10dp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="数量"
+            />
+
+        <TextView
+            android:id="@+id/tv_ji_lu_jia_ge"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="价格"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_show_xiang_xi_shang_ping_ji_lu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</LinearLayout>

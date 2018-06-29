@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/b_title_border"
+            android:gravity="center"
+            android:text="重置密码"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/ivreturn_activity"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/return_a"
+            />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_passwords"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/user_new_border"
+        android:paddingLeft="5dp"
+        android:inputType="textPassword"
+        android:hint="请输入密码"
+        />
+    <EditText
+        android:id="@+id/et_er_ci_mi_ma"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/user_new_border"
+        android:paddingLeft="5dp"
+        android:inputType="textPassword"
+        android:hint="请再次输入次密码"
+        />
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/register_border"
+        android:text="重 置"
+        />
+
+</LinearLayout>

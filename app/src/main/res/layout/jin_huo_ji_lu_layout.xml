@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+<RelativeLayout
+    android:id="@+id/rl_top_content"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/title_b"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/b_title_border"
+        android:gravity="center"
+        android:text="添加记录"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btn_return_ji_lu"
+        android:layout_width="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_height="45dp"
+        android:background="@mipmap/return_a"
+        />
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_top_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:background="@drawable/vp_title_border_left"
+                    >
+                    <TextView
+                        android:id="@+id/iv_day"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="日"
+                        />
+                    <TextView
+                        android:id="@+id/iv_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:text="月"
+                        />
+                    <TextView
+                        android:id="@+id/iv_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="年"
+                        android:background="@drawable/year_border_false"
+                        />
+                    <!--该控件占位-->
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent">
+
+                    </View>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_setDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@drawable/vp_title_border_right"
+                        android:text="-------------"
+                        />
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@mipmap/screen"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_content"
+                android:layout_marginTop="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v4.view.ViewPager>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

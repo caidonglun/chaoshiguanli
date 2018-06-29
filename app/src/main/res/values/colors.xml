@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <!-- Android standard ICS color -->
+    <color name="result_view">#b0000000</color>
+    <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#00000000</color>
+    <color name="capture_text_cover_bg">#99535353</color>
+
+    <color name="red">#FF3B00</color>
+    <color name="red_press">#990000</color>
+    <color name="dark_gray">#4C535B</color>
+    <color name="dark_gray_press">#ff7e8a97</color>
+
+</resources>

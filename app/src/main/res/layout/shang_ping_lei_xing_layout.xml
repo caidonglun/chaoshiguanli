@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+<RelativeLayout
+    android:id="@+id/rl_top_content"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/title_b"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/b_title_border"
+        android:gravity="center"
+        android:text="商品类型"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btn_return_lei_xing"
+        android:layout_width="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_height="45dp"
+        android:background="@mipmap/return_a"
+        />
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_top_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_shang_ping_lei_xing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>

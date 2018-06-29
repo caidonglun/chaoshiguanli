@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.daimajia.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sl_content"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    >
+    <LinearLayout
+        android:tag="Bottom4"
+        android:id="@+id/bottom_wrapper_2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/magnifier2"-->
+            <!--android:src="@drawable/magnifier"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:background="#f7e79c"-->
+            <!--android:paddingLeft="25dp"-->
+            <!--android:paddingRight="25dp"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <ImageView
+            android:id="@+id/star2"
+            android:src="@mipmap/setting"
+            android:layout_width="70dp"
+            android:background="#4cd964"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/trash2"
+            android:src="@drawable/trash"
+            android:layout_width="70dp"
+            android:background="@drawable/red"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:tag="Bottom3"
+        android:id="@+id/starbott"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/bottom_wrapper_child1"
+            android:background="@drawable/dark_gray"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/star"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/star"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_set_color"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <!--android:background="@drawable/white"-->
+        <TextView
+            android:id="@+id/tv_list_show"
+            android:padding="10dp"
+            android:tag="Hover"
+            android:text="商品名"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_yu_liang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:background="#ffffff"
+        android:layout_weight="1"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="剩余:0"
+        />
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="2018-11-11"
+            />
+
+    </LinearLayout>
+    </com.daimajia.swipe.SwipeLayout>

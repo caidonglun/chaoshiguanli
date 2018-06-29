@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_top_content"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/title_c"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/b_title_border"
+                android:gravity="center"
+                android:text="信息修改"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="条形码号："
+                        android:textSize="14sp"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/et_id_guan_li"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="30"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textSize="14sp"  />
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/iv_shao_ma_ru_ku"-->
+                            <!--android:layout_width="45dp"-->
+                            <!--android:layout_height="45dp"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:src="@mipmap/saomaruku" />-->
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="商品名称："
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_shang_ping_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="不能为空"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="商品数量："
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_shang_ping_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="不能为空"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--&gt;-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="2"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="16sp"-->
+                <!--android:text="进货价格："-->
+                <!--/>-->
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<EditText-->
+                <!--android:id="@+id/et_shang_jin_huo_ping_yuan"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:maxLength="5"-->
+                <!--android:layout_weight="1"-->
+                <!--android:hint="不能为空"-->
+                <!--android:textSize="18sp"-->
+                <!--android:inputType="number"-->
+                <!--android:singleLine="true"-->
+                <!--android:text=""-->
+                <!--/>-->
+                <!--<TextView-->
+                <!--android:layout_width="10dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="left|bottom"-->
+                <!--android:textSize="40sp"-->
+                <!--android:text="."-->
+                <!--/>-->
+                <!--<EditText-->
+                <!--android:id="@+id/et_shang_ping_yuan_jin_huo_xiao_shu"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:maxLength="2"-->
+                <!--android:layout_weight="2"-->
+                <!--android:textSize="18sp"-->
+                <!--android:inputType="number"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="00"-->
+                <!--/>-->
+                <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="商品类型："
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <Spinner
+                            android:id="@+id/s_jin_huo_lei_xing"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="出售价格："
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_shang_ping_yuan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:hint="不能为空"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="10dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left|bottom"
+                            android:text="."
+                            android:textSize="40sp" />
+
+                        <EditText
+                            android:id="@+id/et_shang_ping_yuan_xiao_shu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:singleLine="true"
+                            android:text="00"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="备注信息："
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_bei_zhu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="可选择输入"
+                        android:inputType="textMultiLine"
+                        android:text=""
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

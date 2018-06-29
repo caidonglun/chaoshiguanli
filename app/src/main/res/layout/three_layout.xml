@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+<RelativeLayout
+    android:id="@+id/rl_top_content"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/title_c"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/b_title_border"
+        android:gravity="center"
+        android:text="商品管理"
+        android:textSize="20sp" />
+    <ImageView
+        android:id="@+id/iv_query_shang_ping"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:paddingTop="1dp"
+        android:paddingLeft="1dp"
+        android:background="@drawable/query_border_shang_ping_guan_li"
+        android:src="@mipmap/query_a"
+        />
+
+    <ImageView
+        android:id="@+id/iv_add_shang_ping"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/sang_ping_add_border"
+        />
+    <RelativeLayout
+        android:id="@+id/ll_gone_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#ffffff"
+        android:visibility="gone"
+        android:layout_marginRight="50dp">
+        <AutoCompleteTextView
+            android:id="@+id/auto_query_guan_li"
+            android:focusable="true"
+            android:singleLine="true"
+            android:completionThreshold="1"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入商品名"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_top_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>

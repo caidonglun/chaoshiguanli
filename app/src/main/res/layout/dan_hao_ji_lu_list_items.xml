@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:tag="Hover"
+            android:layout_marginLeft="10dp"
+            android:text="单号:"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_dan_hao"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="#8a8a8a"
+            android:layout_height="match_parent"
+            android:text="132412341234123412341234"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="价值:"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_yu_liang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textColor="#ff0000"
+                    />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:textColor="#ff6b6b"
+                    android:text="¥"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#8a8a8a"
+            android:layout_weight="1"
+            android:text="2018-11-11"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

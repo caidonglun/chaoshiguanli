@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lei_xing">
+        <item>无</item>
+        <item>花类</item>
+        <item>服饰类</item>
+        <item>化妆品类</item>
+        <item>五金工具类</item>
+        <item>办公文具类</item>
+        <item>家居用品类</item>
+        <item>体育用品类</item>
+        <item>副食饮料类</item>
+    </string-array>
+
+    <array name="question">
+        <item>-请选择-</item>
+        <item>我的生日是多少？</item>
+        <item>我的中学叫什么？</item>
+        <item>我的高中老师叫什么？</item>
+
+    </array>
+
+</resources>

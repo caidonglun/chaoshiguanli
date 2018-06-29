@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/b_title_border"
+            android:gravity="center"
+            android:text="忘记密码"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/ivreturn_activity"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/return_a"
+            />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_user_id"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/user_new_border"
+        android:paddingLeft="5dp"
+        android:hint="请输入账号"
+        />
+    <Spinner
+        android:id="@+id/s_wen_ti"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/user_new_border"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/et_aswer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/user_new_border"
+        android:layout_marginLeft="30dp"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="30dp"
+        android:hint="请输入问题答案"
+        />
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/register_border"
+        android:text="提 交"
+        />
+</LinearLayout>
